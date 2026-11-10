@@ -131,9 +131,9 @@ html {scroll-behavior: smooth;}
     #mainvisual{min-height:0;padding:0 0 80px;background: #000;}
     .mv_video_wrap{opacity:.8;right: -80px;}
     #mainvisual .visual_txt{padding:120px 20px 0;}
-    #mainvisual .visual_txt h4{font-size:18px;line-height:26px;}
+    #mainvisual .visual_txt h4{font-size:15px;line-height:24px;}
     #mainvisual .visual_txt h3{font-size:32px;line-height:40px;margin:12px 0 20px;}
-    #mainvisual .visual_txt > p{font-size:15px;line-height:26px;}
+    #mainvisual .visual_txt > p{font-size:15px;line-height:24px;}
     #mainvisual .visual_txt > p br{display:none;}
     #mainvisual .btnbox{margin:95px 0 0;flex-direction:column;gap:25px;}
     #mainvisual .btnbox .g_box{flex:none;}
@@ -144,8 +144,8 @@ html {scroll-behavior: smooth;}
 
     @media (max-width:390px){
     #mainvisual .visual_txt{padding:100px 20px 0;}
-    #mainvisual .visual_txt h3{font-size:27px;line-height:35px;}
-    #mainvisual .btnbox .g_box a{font-size:17px;}
+    #mainvisual .visual_txt h3{font-size:28px;line-height:31px;}
+    
     }
 
 
@@ -178,6 +178,7 @@ html {scroll-behavior: smooth;}
     .section01 .leftbox{width:100%;}
     .section01 .leftbox h5{font-size:20px;line-height:28px;word-break:keep-all;}
     .section01 .leftbox h3{font-size:40px;line-height:52px;}
+    .section01 .leftbox h3 br{display: none;}
     .section01 .rightbox{width:100%;padding-top:0;gap:30px;}
     .section01 .rightbox .txt{font-size:17px;line-height:30px;word-break:keep-all;}
     .section01 .rightbox .go_inq{width:270px;padding:16px 28px;font-size:20px;}
@@ -186,12 +187,12 @@ html {scroll-behavior: smooth;}
     @media (max-width:768px){
     .section01{gap:30px;padding:70px 20px 60px;}
     .section01 .leftbox{gap:15px;}
-    .section01 .leftbox h5{font-size:18px;line-height:26px;}
-    .section01 .leftbox h3{font-size:32px;line-height:42px;letter-spacing:-0.8px;}
-    .section01 .rightbox{gap:25px;}
-    .section01 .rightbox .txt{font-size:16px;line-height:28px;}
+    .section01 .leftbox h5{font-size:16px;line-height:20px;}
+    .section01 .leftbox h3{font-size:32px;line-height:40px;letter-spacing:-0.8px;}
+    .section01 .rightbox{gap:35px;}
+    .section01 .rightbox .txt{font-size:15px;line-height:25px;}
     .section01 .rightbox .txt br{display:none;}
-    .section01 .rightbox .go_inq{width:100%;padding:16px 24px;font-size:19px;}
+    .section01 .rightbox .go_inq{width:100%;padding:16px 24px;font-size:16px;}
     }
 
     @media (max-width:390px){
