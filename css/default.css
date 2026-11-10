@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+
+
+/* */
+html, body{
+  -webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+  -ms-text-size-adjust : none;  /* IE */
+  -moz-text-size-adjust : none;  /* 파이어폭스 */
+  -o-text-size-adjust : none;  /* 오페라 구버전 */
+}
+BODY {font-size:13px; color:#666666; font-family: "Pretendard", "play", Dotum, "돋움", Verdana, Arial, sans-serif !important;}
+header {margin:0; padding:0;}
+h5 {
+	-webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/* CSS reset Start*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+html {
+	margin:0;
+	padding:0;
+	
+	width:100%;
+	height:100%;
+
+}
+
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	padding:0;
+	margin:0;
+	width:100%;
+}
+fieldset,img { 
+	border:0;
+}
+
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ul {
+	list-style:none;
+}
+a {
+text-decoration:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* CSS reset End*/
+
+
+/*LOW VER. IE SUPPORT HTML5*/
+article, aside, hgroup, header, footer, figure, figcaption, section,time, mark, canvas, video, audio, details, summary {display:block;}
+
+
+th {
+	text-align:center;
+	font-weight:bold;
+}
+
+A {color: #444444}
+
+.input{border:1px solid #cccccc; background-color:#FFF;height:20px; vertical-align:middle; }
+.input_select{border:1px solid #cccccc; background-color:#FFF;height:20px; vertical-align:middle; }
+.input_select{border:1px solid #cccccc; background-color:#FFF;height:20px; vertical-align:middle; }
+.input_text{border:1px solid #cccccc; background-color:#FFF; vertical-align:middle; height:18px; }
+.input_text_field{border:1px solid #cccccc; width:95%; background-color:#FFF; vertical-align:middle; height:200px;}
+
+.text_left {color:#444444; text-align:left;}
+.text_center {color:#444444; text-align:center;}
+.text_right {color:#444444; text-align:right;}
+
+.insert_page_text {padding-left:20px;}
+.insert_page_text_b {padding-left:20px;font-weight:bold}
+
+#wrap {width:100%;}
+#default_size {width:100%; text-align:center;}
+
