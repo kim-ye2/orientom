@@ -191,13 +191,19 @@ $(function () {
         moveTo(this.hash.replace('#', ''));
     });
 
-    // 같은 페이지에서 헤더/모바일 메뉴 등 외부 링크 클릭 시 (예: research.php#q-traffic)
+        // 같은 페이지에서 헤더/모바일 메뉴 등 외부 링크 클릭 시 (예: research.html#q-traffic)
     $(document).on('click', 'a[href*="#"]', function (e) {
         if ($(this).closest('.side_wrap .leftmenu').length) return;
         var id = this.hash.replace('#', '');
         var samePage = this.pathname.replace(/^\//, '') === location.pathname.replace(/^\//, '');
         if (!samePage || !isSection(id)) return;
         e.preventDefault();
+
+        // 모바일 메뉴에서 클릭한 경우 메뉴 닫고 이동
+        if ($(this).closest('#menuArea').length) {
+            $('.menuList').css('right', '-100%');
+            $('#menuArea').fadeOut(200);
+        }
         moveTo(id);
     });
 
