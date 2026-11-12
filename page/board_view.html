@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>ORIENTOM : Everyone's Quantum, connected as one.</title>
+    <meta content="" name="keywords" />
+    <meta content="website" property="og:type">
+    <meta content="template" property="og:url">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+   	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+   	<meta name="keywords" content="ORIENTOM, 오리엔텀, (주)오리엔텀" />
+
+ <!-- css -->
+    <link rel="stylesheet" crossorigin="" href="../css/default.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link href="/favicon.ico" rel="icon">
+    <!-- jq -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <!-- AOS (스크롤 애니메이션) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Slick Slider (배너, 캐러셀) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- jQuery Easing (jQuery animate()에 easing 효과 추가) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="../js/pub.js"></script>
+    <!-- Lenis 라이브러리-->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css">
+    <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap" class="subwrap">
+        <!--- Header // S --->
+       	<div id="header">
+            <div class="header_in ">
+                <h1><a href="/index.php"><img src="../images/logo.png" alt="ORIENTOM"></a></h1>
+                <div id="menu">
+                   <ul>
+                        <li><a href="/page/product.html" target="_self">Product</a>
+                            <dl>
+                                <dd><a href="/page/product.html#overview">Intro</a></dd>
+                                <dd><a href="/page/product.html#atom-q">Atom-Q</a></dd>
+                                <dd><a href="/page/product.html#titanium-q">Titanium-Q</a></dd>
+                                <dd><a href="/page/product.html#finance">Finance Applications</a></dd>
+                            </dl>
+                        </li>
+                        <li><a href="/page/research.html" target="_self">Research Area</a>
+                            <dl>
+                                <dd><a href="/page/research.html#overview">Intro</a></dd>
+                                <dd><a href="/page/research.html#q-finance">Q-Finance</a></dd>
+                                <dd><a href="/page/research.html#q-electric-grid">Q-Electric Grid</a></dd>
+                                <dd><a href="/page/research.html#q-material">Q-Material</a></dd>
+                                <dd><a href="/page/research.html#q-traffic">Q-Traffic</a></dd>
+                                <dd><a href="/page/research.html#q-biohealth">Q-Biohealth</a></dd>
+                            </dl>
+                        </li>
+                        <li><a href="/page/platforms.html" target="_self">Platforms</a>
+                            <dl>
+                                <dd><a href="/page/platforms.html#overview">Intro</a></dd>
+                                <dd><a href="/page/platforms.html#superconducting">Superconductor</a></dd>
+                                <dd><a href="/page/platforms.html#ion-trap">Ion Trap</a></dd>
+                                <dd><a href="/page/platforms.html#neutral-atom">Neutral Atom</a></dd>
+                                <dd><a href="/page/platforms.html#photonics">Photonics</a></dd>
+                                <dd><a href="/page/platforms.html#simulator">Simulator</a></dd>
+                            </dl>
+                        </li>
+                        <li><a href="/page/company.html" target="_self">Company</a>
+                            <dl>
+                                <dd><a href="/page/company.html#about-us">About us</a></dd>
+                                <dd><a href="/page/company.html#business-model">Business model</a></dd>
+                                <dd><a href="/page/company.html#leadership">Leadership</a></dd>
+                                <dd><a href="/page/company.html#roadmap">Roadmap</a></dd>
+                                <dd><a href="/page/company.html#partners">Partners</a></dd>
+                                <dd><a href="/page/board_list.html">Publications</a></dd>
+                                <dd><a href="/page/gallery_list.html">Media</a></dd>
+                                <dd><a href="">SNS</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+                <a href="/page/contact.html" class="contact">Contact Us</a>
+                <p class="btns">
+                    <a class="menuBtn mo"></a>
+                </p>
+            </div>            
+        </div>        
+        <!--- Header // E --->
+
+        <!-- 모바일 Menu // S -->
+        <div id="menuArea" class="header_mobile" >
+            <div class="menuList">
+                <button type="button" class="btnMenu_mClose" title="Close">Close</button>
+                <ul class="list">
+                    <li>
+                        <a class="dropdown-toggle">Product<i></i></a>
+                        <ul class="sMenu">
+                            <li><a href="/page/product.html#overview">Intro</a></li>
+                            <li><a href="/page/product.html#atom-q">Atom-Q</a></li>
+                            <li><a href="/page/product.html#titanium-q">Titanium-Q</a></li>
+                            <li><a href="/page/product.html#finance">Finance Applications</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle">Research Area<i></i></a>
+                        <ul class="sMenu">
+                            <li><a href="/page/research.html#overview">Intro</a></li>
+                            <li><a href="/page/research.html#q-finance">Q-Finance</a></li>
+                            <li><a href="/page/research.html#q-electric-grid">Q-Electric Grid</a></li>
+                            <li><a href="/page/research.html#q-material">Q-Material</a></li>
+                            <li><a href="/page/research.html#q-traffic">Q-Traffic</a></li>
+                            <li><a href="/page/research.html#q-biohealth">Q-Biohealth</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle">Platforms<i></i></a>
+                        <ul class="sMenu">
+                            <li><a href="/page/platforms.html#overview">Intro</a></li>
+                            <li><a href="/page/platforms.html#superconducting">Superconductor</a></li>
+                            <li><a href="/page/platforms.html#ion-trap">Ion Trap</a></li>
+                            <li><a href="/page/platforms.html#neutral-atom">Neutral Atom</a></li>
+                            <li><a href="/page/platforms.html#photonics">Photonics</a></li>
+                            <li><a href="/page/platforms.html#simulator">Simulator</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-toggle">Company<i></i></a>
+                        <ul class="sMenu">
+                            <li><a href="/page/company.html#about-us">About us</a></li>
+                            <li><a href="/page/company.html#business-model">Business model</a></li>
+                            <li><a href="/page/company.html#leadership">Leadership</a></li>
+                            <li><a href="/page/company.html#roadmap">Roadmap</a></li>
+                            <li><a href="/page/company.html#partners">Partners</a></li>
+                            <li><a href="/page/board_list.html">Publications</a></li>
+                            <li><a href="/page/gallery_list.html">Media</a></li>
+                            <li><a href="">SNS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 모바일 Menu // E-->
+
+
+        <!-- 서브컨텐츠 // S-->
+        <div id="contents">
+            <div class="side_wrap board">
+                <div class="leftmenu" data-lenis-prevent>
+                    <a  class="active">
+                        <h3>Publications</h3>
+                        <p>
+                            Research papers and publications<br/>
+                            by ORIENTOM.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="rightcont">
+
+                    <!--01-->
+                    <div class="cont_box cont_box_normal" >
+                     <div class="board_view">
+                        <div class="view_head">
+                            <h4>Test Applications of Quantum Machine Learning in Financial Markets</h4>
+                            <p class="date"><img src="../images/time_regular.svg" alt="">2026.10.20</p>
+                        </div>
+                        <div class="view_cont">
+                            <p>
+                                TEST TEST ORIENTOM continues to push the boundaries of quantum computing and quantum-inspired technologies,<br/>
+                                developing innovative approaches to address complex computational challenges.<br/><br/>
+                                Our research focuses on advancing computational efficiency across key areas, including<br/>
+                                financial modeling, portfolio optimization, risk analysis, and large-scale simulations.
+                          <br/><br/>
+                                By combining advanced algorithms with practical applications, ORIENTOM aims to bridge the gap<br/>
+                                between emerging quantum technologies and real-world industry needs.
+                          <br/><br/>
+                                We remain committed to exploring new possibilities in next-generation computing and creating meaningful technological<br/>
+                                advancements through continuous research and innovation.
+                         <br/><br/>
+                                Stay tuned for more updates on our latest research, projects, and developments.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="view_btn">
+                        <a href="" class="go_list"><img src="../images/arrow_back_ios.svg" alt="">LIST</a>
+                    </div>
+  
+                    </div>
+                 
+
+                </div>
+            </div>  
+        </div>        
+        <!-- 서브컨텐츠 // E-->
+
+
+        <!--- Footer // S --->
+        <footer id="footer">
+            <div class="footer_in">
+                <div class="f_left">
+                    <img src="../images/f_logo.png" alt=""> © ORIENTOM Co., Ltd.  All rights reserved.<br/>
+                    contact@orientom.com
+                </div>
+                <div class="f_right">
+                    <a href="">회사소개</a>
+                    <span></span>
+                    <a href="">개인정보처리방침</a>
+                    <span></span>
+                    <a href="">이용약관</a>
+                </div>               
+            </div> 
+        </footer>        
+        <!--- Footer // E --->
+
+    </div>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
