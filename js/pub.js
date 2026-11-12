@@ -104,9 +104,9 @@ $(function () {
         return (pos === 'fixed' || pos === 'sticky') ? $h.outerHeight() : 0;
     }
 
-    // 섹션 이동 시 위쪽 여백
+    // 섹션 이동 시 위쪽 여백 (헤더 position과 상관없이 헤더 높이만큼 항상 띄움)
     function getOffset() {
-        return getHeaderH() + SPACE;
+        return ($('#header').outerHeight() || 0) + SPACE;
     }
 
     // 이 페이지의 섹션 id인지 확인
@@ -218,6 +218,8 @@ $(function () {
         var id = location.hash.replace('#', '');
         if (isSection(id)) {
             moveTo(id, true);
+            // 폰트/이미지로 레이아웃이 늦게 바뀌는 경우 대비해 한 번 더 보정
+            setTimeout(function () { moveTo(id, true); }, 150);
         } else {
             spy();
         }
