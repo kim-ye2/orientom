@@ -227,10 +227,12 @@ $(function () {
        사용법: <div class="side_wrap product" data-autoplay="5000">
        - 숫자 = 섹션당 머무는 시간(ms)
        - 사용자 조작(휠/터치/클릭/키보드) 시 멈춤 → RESUME 후 현재 섹션 다음부터 다시 시작
+       - 980px 이하에서는 자동 이동 안 함
     ------------------------------------------------------------------------- */
     var AUTO   = parseInt($wrap.attr('data-autoplay'), 10) || 0;
     var RESUME = 5000;  // 사용자 조작 후 다시 시작까지 대기(ms)
     var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var mqMo   = window.matchMedia('(max-width: 980px)');  // 모바일 기준
 
     if (AUTO && !reduce && $secs.length > 1) {
         var autoTimer = null, resumeTimer = null;
@@ -244,6 +246,7 @@ $(function () {
 
         var autoStart = function () {
             clearTimeout(autoTimer);
+            if (mqMo.matches) return;  // 980px 이하면 실행 안 함
             autoTimer = setTimeout(function () {
                 autoNext();
                 autoStart();
@@ -268,6 +271,13 @@ $(function () {
         document.addEventListener('visibilitychange', function () {
             if (document.hidden) autoStop(); else autoStart();
         });
+
+        // 화면 크기가 980px 기준을 넘나들 때 멈춤/재시작
+        var onMqChange = function () {
+            if (mqMo.matches) autoStop(); else autoStart();
+        };
+        if (mqMo.addEventListener) mqMo.addEventListener('change', onMqChange);
+        else mqMo.addListener(onMqChange);  // 구형 Safari
 
         $win.on('load', autoStart);
     }
