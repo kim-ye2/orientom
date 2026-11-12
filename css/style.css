@@ -337,7 +337,7 @@ justify-content: space-between;align-items: flex-start;align-self: stretch;}
 .product .rightcont .product_cont04 h4{color: #FFF;font-size: 25px;font-weight: 700;line-height: 24px; /* 96% */letter-spacing: -0.75px;margin:0 0 12px 0;}
 .product .rightcont .product_cont04 .txt{color: #FFF;font-size: 15px;font-weight: 300;line-height: 24px;}
 .product .rightcont .product_cont04 .btm_tbox{display: grid;grid-template-columns: repeat(2, 1fr); gap: 20px;}
-.product .rightcont .product_cont04 .btm_tbox div{display: flex;padding: 20px;align-items: center;align-self: stretch;justify-self: stretch;border-radius: 20px;background: rgba(15, 16, 29, 0.85);color: rgba(255, 255, 255, 0.80);font-size: 15px;font-weight: 700;line-height: 20px;}
+.product .rightcont .product_cont04 .btm_tbox div{display: flex;padding: 20px;align-items: center;align-self: stretch;justify-self: stretch;border-radius: 20px;background: rgba(15, 16, 29, 0.85);color: rgba(255, 255, 255, 0.80);font-size: 15px;font-weight: 600;line-height: 20px;}
 
 
 @media (max-width:980px){
