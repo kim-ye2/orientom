@@ -191,7 +191,7 @@ $(function () {
         moveTo(this.hash.replace('#', ''));
     });
 
-        // 같은 페이지에서 헤더/모바일 메뉴 등 외부 링크 클릭 시 (예: research.html#q-traffic)
+    // 같은 페이지에서 헤더/모바일 메뉴 등 외부 링크 클릭 시 (예: research.html#q-traffic)
     $(document).on('click', 'a[href*="#"]', function (e) {
         if ($(this).closest('.side_wrap .leftmenu').length) return;
         var id = this.hash.replace('#', '');
@@ -222,6 +222,55 @@ $(function () {
             spy();
         }
     });
+
+    /* ---------- 섹션 자동 이동 (side_wrap에 data-autoplay 있을 때만) ----------
+       사용법: <div class="side_wrap product" data-autoplay="5000">
+       - 숫자 = 섹션당 머무는 시간(ms)
+       - 사용자 조작(휠/터치/클릭/키보드) 시 멈춤 → RESUME 후 현재 섹션 다음부터 다시 시작
+    ------------------------------------------------------------------------- */
+    var AUTO   = parseInt($wrap.attr('data-autoplay'), 10) || 0;
+    var RESUME = 5000;  // 사용자 조작 후 다시 시작까지 대기(ms)
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (AUTO && !reduce && $secs.length > 1) {
+        var autoTimer = null, resumeTimer = null;
+
+        // 현재 active 섹션의 다음으로 이동 (마지막이면 처음으로)
+        var autoNext = function () {
+            var idx  = $secs.index($secs.filter('#' + curId));
+            var next = $secs.eq((idx + 1) % $secs.length).attr('id');
+            moveTo(next);
+        };
+
+        var autoStart = function () {
+            clearTimeout(autoTimer);
+            autoTimer = setTimeout(function () {
+                autoNext();
+                autoStart();
+            }, AUTO + SPEED * 1000);  // 이동 시간 + 머무는 시간
+        };
+
+        var autoStop = function () {
+            clearTimeout(autoTimer);
+            clearTimeout(resumeTimer);
+        };
+
+        // 사용자 조작 시 멈춤 → RESUME 후 다시 시작
+        var autoPause = function () {
+            autoStop();
+            resumeTimer = setTimeout(autoStart, RESUME);
+        };
+
+        $win.on('wheel touchstart keydown', autoPause);
+        $(document).on('mousedown', autoPause);
+
+        // 다른 탭으로 이동하면 멈춤, 돌아오면 다시 시작
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) autoStop(); else autoStart();
+        });
+
+        $win.on('load', autoStart);
+    }
 
     setLeftMenu();
     $win.on('load resize scroll', setLeftMenu);
