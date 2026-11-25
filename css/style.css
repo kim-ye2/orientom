@@ -278,6 +278,8 @@ justify-content: space-between;align-items: flex-start;align-self: stretch;}
 .leftmenu a h3{color: #FFF;font-size: 22px;font-weight: 600;line-height: 25px;}
 .leftmenu a p{color: rgba(255, 255, 255, 0.95);font-size: 15px;font-weight: 300;line-height: 22px;}
 .leftmenu a.active{opacity: 1;}
+.product .leftmenu a.active h3{color: #7db5ff;}
+.product .leftmenu a.active p{color:#7db5ff}
 
 .rightcont{display: flex;flex-direction: column;justify-content: center;align-items: flex-start;gap: 50px;flex: 1;min-width: 0;}
 .rightcont .cont_box{display: flex;width:100%;height:750px; padding: 65px;flex-direction: column;align-items: flex-start;box-sizing: border-box;border-radius: 40px;scroll-margin-top: 130px;}
