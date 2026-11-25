@@ -195,6 +195,53 @@
                 </div>   
 
             </div>
+
+             <!---section02 // S -->
+            <div class="section02 partner_box">
+                <h3>Our Partners & Clients</h3>
+                <div class="partner_slide">
+                    <div><img src="images/partner01.svg" alt=""></div>
+                    <div><img src="images/partner02.svg" alt=""></div>
+                    <div><img src="images/partner03.svg" alt=""></div>
+                    <div><img src="images/partner04.svg" alt=""></div>
+                    <div><img src="images/partner05.png" alt=""></div>
+                    <div><img src="images/partner06.svg" alt=""></div>
+                    <div><img src="images/partner07.svg" alt=""></div>
+                    <div><img src="images/partner08.svg" alt=""></div>
+                    <div><img src="images/partner09.svg" alt=""></div>
+                    <div><img src="images/partner10.png" alt=""></div>
+                    <div><img src="images/partner11.svg" alt=""></div>
+                    <div><img src="images/partner12.svg" alt=""></div>
+                </div>
+            </div>         
+            <script>
+                $(function(){
+                    $('.partner_slide').slick({
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 0,
+                        speed: 4000,
+                        cssEase: 'linear',
+                        infinite: true,
+                        arrows: false,
+                        dots: false,
+                        pauseOnHover: false,
+                        pauseOnFocus: false,
+                        swipe: false,
+                        draggable: false,
+                        touchMove: false,
+                        responsive: [
+                            { breakpoint: 980, settings: { slidesToShow: 4 } },
+                            { breakpoint: 640, settings: { slidesToShow: 3 } }
+                        ]
+                    });
+                });
+
+            </script>
+            <!---section02 // E -->
+
+
         </div>
         <!-- E:: 메인비주얼 -->
 
@@ -222,51 +269,7 @@
 
 
 
-        <!---section02 // S -->
-         <div class="section02">
-            <h3>Our Partners & Clients</h3>
-            <div class="partner_slide">
-                <div><img src="images/partner01.svg" alt=""></div>
-                <div><img src="images/partner02.svg" alt=""></div>
-                <div><img src="images/partner03.svg" alt=""></div>
-                <div><img src="images/partner04.svg" alt=""></div>
-                <div><img src="images/partner05.png" alt=""></div>
-                <div><img src="images/partner06.svg" alt=""></div>
-                <div><img src="images/partner07.svg" alt=""></div>
-                <div><img src="images/partner08.svg" alt=""></div>
-                <div><img src="images/partner09.svg" alt=""></div>
-                <div><img src="images/partner10.png" alt=""></div>
-                <div><img src="images/partner11.svg" alt=""></div>
-                <div><img src="images/partner12.svg" alt=""></div>
-            </div>
-         </div>         
-         <script>
-            $(function(){
-                $('.partner_slide').slick({
-                    slidesToShow: 6,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 0,
-                    speed: 4000,
-                    cssEase: 'linear',
-                    infinite: true,
-                    arrows: false,
-                    dots: false,
-                    pauseOnHover: false,
-                    pauseOnFocus: false,
-                    swipe: false,
-                    draggable: false,
-                    touchMove: false,
-                    responsive: [
-                        { breakpoint: 980, settings: { slidesToShow: 4 } },
-                        { breakpoint: 640, settings: { slidesToShow: 3 } }
-                    ]
-                });
-            });
-
-         </script>
-        <!---section02 // E -->
-
+       
 
         <!--- Footer // S --->
         <footer id="footer">
