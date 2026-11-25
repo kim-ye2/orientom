@@ -350,11 +350,221 @@
 
                     <!--05-->
                     <div class="cont_box company_cont05" id="partners">
-                        <h4>Partners</h4>
-                        <p class="txt">
-                            Please enter a description.
-                        </p>
+                        <div class="gf_head">
+                            <div class="gf_tit">
+                                <h4>Partners</h4>
+                                <p class="txt">
+                                    Orientom’s Expanding <em>Global Footprint</em><br/>
+                                    Collaborating with leading quantum companies, research institutes and enterprises worldwide.
+                                </p>
+                            </div>
+                            <ul class="gf_stats">
+                                <li><span class="count" data-count="10">10</span><p>Countries</p></li>
+                                <li><span class="count" data-count="21">21</span><p>Global Partners</p></li>
+                                <li><span class="count" data-count="19">19</span><p>Korea Partners</p></li>
+                            </ul>
+                        </div>
+
+                        <!-- 세계지도 : 핀 위치는 각 li의 data-lat(위도) / data-lon(경도)로 자동 계산 / 같은 data-loc는 하나의 핀으로 묶임 -->
+                        <div class="gf_stage">
+                            <div class="gf_mapwrap">
+                                <img src="../images/world_dot_map.svg" alt="" class="gf_map">
+                                <svg class="gf_lines" aria-hidden="true"></svg>
+                                <div class="gf_pins"></div>
+                            </div>
+
+                            <!-- 북미 -->
+                            <ul class="gf_list gf_left">
+                                <li data-loc="toronto" data-lat="43.46" data-lon="-80.52"><span class="logo">softwareQ</span><span class="loc"><b>Waterloo</b>, <em>CANADA</em></span></li>
+                                <li data-loc="toronto" data-lat="43.65" data-lon="-79.38"><span class="logo">XANADU</span><span class="loc"><b>Toronto</b>, <em>CANADA</em></span></li>
+                                <li data-loc="newyork" data-lat="40.71" data-lon="-74.01"><span class="logo">IBM</span><span class="loc"><b>New York</b>, <em>USA</em></span></li>
+                                <li data-loc="dc" data-lat="38.91" data-lon="-77.04"><span class="logo">IONQ</span><span class="loc"><b>Washington</b>, <em>USA</em></span></li>
+                                <li data-loc="bayarea" data-lat="37.87" data-lon="-122.27"><span class="logo">ATOM COMPUTING</span><span class="loc"><b>Berkeley</b>, <em>USA</em></span></li>
+                                <li data-loc="boston" data-lat="42.36" data-lon="-71.06"><span class="logo">QuEra</span><span class="loc"><b>Boston</b>, <em>USA</em></span></li>
+                                <li data-loc="bayarea" data-lat="37.35" data-lon="-121.95"><span class="logo">NVIDIA</span><span class="loc"><b>Santa Clara</b>, <em>USA</em></span></li>
+                                <li data-loc="dc" data-lat="38.88" data-lon="-77.10"><span class="logo">QED-C</span><span class="loc"><b>Arlington, VA</b>, <em>USA</em></span></li>
+                                <li data-loc="vancouver" data-lat="49.28" data-lon="-123.12"><span class="logo">BTQ</span><span class="loc"><b>Vancouver</b>, <em>CANADA</em></span></li>
+                            </ul>
+
+                            <!-- 유럽 · 중동 · 아시아 -->
+                            <ul class="gf_list gf_right">
+                                <li data-loc="espoo" data-lat="60.21" data-lon="24.66"><span class="loc"><b>Espoo</b>, <em>FINLAND</em></span><span class="logo">IQM</span></li>
+                                <li data-loc="edinburgh" data-lat="55.95" data-lon="-3.19"><span class="loc"><b>Edinburgh</b>, <em>U.K</em></span><span class="logo">Univ. of Edinburgh</span></li>
+                                <li data-loc="london" data-lat="51.51" data-lon="-0.13"><span class="loc"><b>London</b>, <em>U.K</em></span><span class="logo">QSL</span></li>
+                                <li data-loc="paris" data-lat="48.86" data-lon="2.35"><span class="loc"><b>Paris</b>, <em>FRANCE</em></span><span class="logo">PASQAL</span></li>
+                                <li data-loc="paris" data-lat="48.86" data-lon="2.35"><span class="loc"><b>Paris</b>, <em>FRANCE</em></span><span class="logo">QUANDELA</span></li>
+                                <li data-loc="strasbourg" data-lat="48.57" data-lon="7.75"><span class="loc"><b>Strasbourg</b>, <em>FRANCE</em></span><span class="logo">QPerfect</span></li>
+                                <li data-loc="torino" data-lat="45.07" data-lon="7.69"><span class="loc"><b>Torino</b>, <em>ITALY</em></span><span class="logo">LINKS</span></li>
+                                <li data-loc="telaviv" data-lat="32.09" data-lon="34.78"><span class="loc"><b>Tel Aviv</b>, <em>ISRAEL</em></span><span class="logo">CLASSIQ</span></li>
+                                <li data-loc="telaviv" data-lat="32.09" data-lon="34.78"><span class="loc"><b>Tel Aviv</b>, <em>ISRAEL</em></span><span class="logo">Quantum Machines</span></li>
+                                <li data-loc="thailand" data-lat="13.60" data-lon="100.60"><span class="loc"><b>Samut Prakan</b>, <em>THAILAND</em></span><span class="logo">EQ Tech Energy</span></li>
+                                <li data-loc="thailand" data-lat="14.88" data-lon="102.02"><span class="loc"><b>Nakhon Ratchasima</b>, <em>THAILAND</em></span><span class="logo">SUT</span></li>
+                                <li data-loc="singapore" data-lat="1.35" data-lon="103.82"><span class="loc"><b>Singapore</b>, <em>SINGAPORE</em></span><span class="logo">QAI Labs</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- 국내 파트너 (서울 HQ 핀과 연동) -->
+                        <div class="gf_korea" data-loc="seoul" data-lat="37.57" data-lon="126.98">
+                            <p class="gf_korea_tit"><b>Seoul</b>, <em>KOREA</em></p>
+                           <div class="gf_marquee">
+                                <ul>
+                                    <li><img src="../images/c_partner01.png" alt="KB Bank"></li>
+                                    <li><img src="../images/c_partner02.png" alt="LG Electronics"></li>
+                                    <li><img src="../images/c_partner03.png" alt="Hana Bank"></li>
+                                    <li><img src="../images/c_partner04.png" alt="KAIST"></li>
+                                    <li><img src="../images/c_partner05.png" alt="POSCO Holdings"></li>
+                                    <li><img src="../images/c_partner06.png" alt="Yonsei University"></li>
+                                    <li><img src="../images/c_partner07.png" alt="Finger"></li>
+                                    <li><img src="../images/c_partner08.png" alt="Fintech"></li>
+                                    <li><img src="../images/c_partner09.png" alt="ICTK"></li>
+                                    <li><img src="../images/c_partner10.png" alt="maum.ai"></li>
+                                    <li><img src="../images/c_partner11.png" alt="aia3D"></li>
+                                    <li><img src="../images/c_partner12.png" alt="NORMA"></li>
+                                    <li><img src="../images/c_partner13.png" alt="BLOCKS"></li>
+                                    <li><img src="../images/c_partner14.png" alt="Megazone Cloud"></li>
+                                    <li><img src="../images/c_partner15.png" alt="Deep in Sight"></li>
+                                    <li><img src="../images/c_partner16.png" alt="Dots"></li>
+                                    <li><img src="../images/c_partner17.png" alt="Korea University"></li>
+                                    <li><img src="../images/c_partner18.png" alt="POSTECH"></li>
+                                    <li><img src="../images/c_partner19.png" alt="Pukyong National University"></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+                    <script>
+                        /* Partners - Global Footprint 지도 */
+                        document.addEventListener('DOMContentLoaded', function () {
+                            var box = document.querySelector('.company_cont05');
+                            if (!box) return;
+                            var stage = box.querySelector('.gf_stage');
+                            var wrap = box.querySelector('.gf_mapwrap');
+                            var pinsEl = box.querySelector('.gf_pins');
+                            var svg = box.querySelector('.gf_lines');
+                            var korea = box.querySelector('.gf_korea');
+                            var items = [].slice.call(box.querySelectorAll('.gf_list li'));
+                            var NS = 'http://www.w3.org/2000/svg';
+
+                            // Miller 도법 (world_dot_map.svg 와 동일 : 위도 80 ~ -58)
+                            function my(lat) { return 1.25 * Math.log(Math.tan(Math.PI / 4 + 0.4 * lat * Math.PI / 180)); }
+                            var Y_TOP = my(80), Y_BOT = my(-58);
+                            function project(lat, lon) { return { x: (lon + 180) / 360 * 100, y: (Y_TOP - my(lat)) / (Y_TOP - Y_BOT) * 100 }; }
+
+                            // 핀 생성 (data-loc 기준으로 묶음)
+                            var pins = {}, order = [];
+                            function addPin(el, hq) {
+                                var loc = el.getAttribute('data-loc');
+                                if (pins[loc]) return;
+                                var p = project(parseFloat(el.getAttribute('data-lat')), parseFloat(el.getAttribute('data-lon')));
+                                var city = el.querySelector('b') ? el.querySelector('b').textContent : loc;
+                                var btn = document.createElement('button');
+                                btn.type = 'button';
+                                btn.className = 'gf_pin' + (hq ? ' is_hq' : '');
+                                btn.setAttribute('data-loc', loc);
+                                btn.setAttribute('aria-label', city);
+                                btn.style.left = p.x + '%';
+                                btn.style.top = p.y + '%';
+                                btn.style.animationDelay = (Math.random() * 3).toFixed(2) + 's';
+                                btn.innerHTML = '<i></i><span class="gf_pin_label">' + city + '</span>';
+                                pinsEl.appendChild(btn);
+                                pins[loc] = btn;
+                                order.push(loc);
+                            }
+                            items.forEach(function (li) { addPin(li); });
+                            addPin(korea, true);
+
+                            // 리스트 → 핀 연결선 + 서울 HQ 아크
+                            var lines = [];
+                            var arc = document.createElementNS(NS, 'path');
+                            arc.setAttribute('class', 'gf_arc');
+                            items.forEach(function (li) {
+                                var path = document.createElementNS(NS, 'path');
+                                path.setAttribute('class', 'ln');
+                                path.setAttribute('data-loc', li.getAttribute('data-loc'));
+                                svg.appendChild(path);
+                                lines.push({ li: li, path: path });
+                            });
+                            svg.appendChild(arc);
+
+                            function pinXY(loc) {
+                                var w = wrap.getBoundingClientRect(), r = pins[loc].getBoundingClientRect();
+                                return { x: r.left + r.width / 2 - w.left, y: r.top + r.height / 2 - w.top };
+                            }
+                            function drawLines() {
+                                var w = wrap.getBoundingClientRect();
+                                svg.setAttribute('viewBox', '0 0 ' + w.width + ' ' + w.height);
+                                lines.forEach(function (o) {
+                                    var r = o.li.getBoundingClientRect();
+                                    var isLeft = o.li.parentNode.classList.contains('gf_left');
+                                    var sx = (isLeft ? r.right : r.left) - w.left;
+                                    var sy = r.top + r.height - 1 - w.top;
+                                    var p = pinXY(o.li.getAttribute('data-loc'));
+                                    o.path.setAttribute('d', 'M' + sx + ' ' + sy + 'L' + p.x + ' ' + p.y);
+                                });
+                                if (current && current !== 'seoul') drawArc(current);
+                            }
+                            function drawArc(loc) {
+                                var a = pinXY('seoul'), b = pinXY(loc);
+                                var dist = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2));
+                                var cx = (a.x + b.x) / 2, cy = Math.min(a.y, b.y) - dist * 0.32;
+                                arc.setAttribute('d', 'M' + a.x + ' ' + a.y + 'Q' + cx + ' ' + cy + ' ' + b.x + ' ' + b.y);
+                                var len = arc.getTotalLength();
+                                arc.style.strokeDasharray = len;
+                                arc.style.strokeDashoffset = len;
+                                arc.getBoundingClientRect();
+                                arc.classList.add('on');
+                                arc.style.strokeDashoffset = 0;
+                            }
+
+                            // 활성화
+                            var current = null;
+                            function setActive(loc) {
+                                if (current === loc) return;
+                                current = loc;
+                                box.classList.toggle('has_active', !!loc);
+                                items.forEach(function (li) { li.classList.toggle('active', li.getAttribute('data-loc') === loc); });
+                                lines.forEach(function (o) { o.path.classList.toggle('on', o.li.getAttribute('data-loc') === loc); });
+                                Object.keys(pins).forEach(function (k) { pins[k].classList.toggle('active', k === loc); });
+                                korea.classList.toggle('active', loc === 'seoul');
+                                arc.classList.remove('on');
+                                if (loc && loc !== 'seoul') drawArc(loc);
+                            }
+
+                            // 마우스오버 / 포커스
+                            var hovering = false;
+                            function bind(el, loc) {
+                                el.addEventListener('mouseenter', function () { hovering = true; setActive(loc); });
+                                el.addEventListener('mouseleave', function () { hovering = false; setActive(null); });
+                                el.addEventListener('focus', function () { setActive(loc); });
+                            }
+                            items.forEach(function (li) { bind(li, li.getAttribute('data-loc')); });
+                            Object.keys(pins).forEach(function (k) { bind(pins[k], k); });
+                            bind(korea, 'seoul');
+
+                            // 국내 파트너 무한 흐름 (복제)
+                            var mq = korea.querySelector('.gf_marquee ul');
+                            mq.innerHTML += mq.innerHTML;
+
+                            // 자동 순환 (화면에 보일 때만, 마우스오버 시 정지)
+                            var idx = -1, timer = null;
+                            var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                            function tick() {
+                                if (hovering) return;
+                                idx = (idx + 1) % order.length;
+                                setActive(order[idx]);
+                            }
+                            if (!reduce && 'IntersectionObserver' in window) {
+                                new IntersectionObserver(function (en) {
+                                    if (en[0].isIntersecting) { if (!timer) { tick(); timer = setInterval(tick, 2600); } }
+                                    else { clearInterval(timer); timer = null; if (!hovering) setActive(null); }
+                                }, { threshold: 0.3 }).observe(stage);
+                            }
+
+                            drawLines();
+                            window.addEventListener('load', drawLines);
+                            if ('ResizeObserver' in window) new ResizeObserver(drawLines).observe(box);
+                            else window.addEventListener('resize', drawLines);
+                        });
+                    </script>
 
                 </div>
             </div>  
